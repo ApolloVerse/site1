@@ -8,6 +8,63 @@ body {
     font-family: Arial, sans-serif;
 }
 
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Responsive grid */
+.grid {
+    display: grid;
+    gap: 1rem;
+}
+
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+/* Mobile menu styles */
+#mobile-menu {
+    display: none;
+}
+
+#mobile-menu.active {
+    display: block;
+}
+
+/* Rest of the CSS remains the same */
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .carousel {
+        height: 300px;
+    }
+
+    .carousel-caption h2 {
+        font-size: 1.2rem;
+    }
+
+    .carousel-caption p {
+        font-size: 0.9rem;
+    }
+
+    .whatsapp-button {
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+    }
+}
+
 .carousel {
     position: relative;
     width: 100%;

@@ -11,6 +11,16 @@ document.querySelectorAll('nav a').forEach(anchor => {
     });
 });
 
+// Mobile menu functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuToggle.addEventListener('click', function() {
+        mobileMenu.classList.toggle('active');
+    });
+});
+
 // Funcionalidade do Carrossel
 const carousel = document.querySelector('.carousel');
 const items = carousel.querySelectorAll('.carousel-item');
