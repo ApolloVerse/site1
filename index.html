@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStore - Sua Loja Completa</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Cabeçalho com links de navegação atualizados -->
+    <header class="bg-white shadow">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold">TechStore</h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#home" class="text-gray-700">Início</a></li>
+                    <li><a href="#popular-products" class="text-gray-700">Produtos</a></li>
+                    <li><a href="#featured-products" class="text-gray-700">Destaques</a></li>
+                    <li><a href="#deals" class="text-gray-700">Ofertas</a></li>
+                    <li><a href="#categories" class="text-gray-700">Categorias</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Carrossel -->
+    <div class="carousel">
+        <div class="carousel-item active">
+            <img src="https://images.pexels.com/photos/1229861/pexels-photo-1229861.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Laptop na mesa">
+            <div class="carousel-caption">
+                <h2>Espaço de Trabalho Moderno</h2>
+                <p>Aumente sua produtividade com nossas últimas soluções tecnológicas.</p>
+                <button>Saiba Mais</button>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="https://images.pexels.com/photos/3568520/pexels-photo-3568520.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Fones de ouvido sem fio">
+            <div class="carousel-caption">
+                <h2>Áudio Premium</h2>
+                <p>Mergulhe em um som cristalino com nossos fones de ouvido sem fio.</p>
+                <button>Saiba Mais</button>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="https://images.pexels.com/photos/1092644/pexels-photo-1092644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Smartwatch no pulso">
+            <div class="carousel-caption">
+                <h2>Dispositivos Inteligentes</h2>
+                <p>Mantenha-se conectado e monitore sua saúde com nosso último smartwatch.</p>
+                <button>Saiba Mais</button>
+            </div>
+        </div>
+        <button class="carousel-control prev">&lt;</button>
+        <button class="carousel-conhttps://images.pexels.com/photos/303383/pexels-photo-303383.jpegtrol next">&gt;</button>
+    </div>
+
+    <!-- Produtos Populares -->
+    <section class="py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 text-center">Produtos Populares</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
+                <!-- Cards de Produto -->
+                
+                <div class="bg-white rounded-lg shadow-md p-4">
+                    <img src="https://images.pexels.com/photos/303383/pexels-photo-303383.jpeg" alt="Produto" class="w-full h-48 object-cover mb-4 rounded-md">
+                    <h3 class="font-semibold">Notebook Premium Pro</h3>
+                    <p class="text-sm text-gray-600">Intel Core i7, 16GB RAM</p>
+                    <div class="flex items-center mt-2">
+                        <span class="text-yellow-400">★★★★★</span>
+                        <span class="ml-2 font-bold">R$ 4.999,99</span>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-4">
+                <img src="https://images.pexels.com/photos/303383/pexels-photo-303383.jpeg" alt="Product" class="w-full h-48 object-cover mb-4 rounded-md">
+                <h3 class="font-semibold">Premium Laptop Pro</h3>
+                <p class="text-sm text-gray-600">Intel Core i7, 16GB RAM</p>
+                <div class="flex items-center mt-2">
+                    <span class="text-yellow-400">★★★★★</span>
+                    <span class="ml-2 font-bold">$999.99</span>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-4">
+                <img src="https://images.pexels.com/photos/845451/pexels-photo-845451.jpeg" alt="Product" class="w-full h-48 object-cover mb-4 rounded-md">
+                <h3 class="font-semibold">Wireless Headphones</h3>
+                <p class="text-sm text-gray-600">Noise Cancelling, Bluetooth 5.0</p>
+                <div class="flex items-center mt-2">
+                    <span class="text-yellow-400">★★★★☆</span>
+                    <span class="ml-2 font-bold">$149.99</span>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-4">
+                <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg" alt="Product" class="w-full h-48 object-cover mb-4 rounded-md">
+                <h3 class="font-semibold">Gaming Mouse</h3>
+                <p class="text-sm text-gray-600">RGB Lighting, 16,000 DPI</p>
+                <div class="flex items-center mt-2">
+                    <span class="text-yellow-400">★★★★★</span>
+                    <span class="ml-2 font-bold">$59.99</span>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-4">
+                <img src="https://images.pexels.com/photos/5077040/pexels-photo-5077040.jpeg" alt="Product" class="w-full h-48 object-cover mb-4 rounded-md">
+                <h3 class="font-semibold">Mechanical Keyboard</h3>
+                <p class="text-sm text-gray-600">Cherry MX Blue Switches</p>
+                <div class="flex items-center mt-2">
+                    <span class="text-yellow-400">★★★★★</span>
+                    <span class="ml-2 font-bold">$89.99</span>
+                </div>
+            </div>
+          </div>
+    </section>
+
+    <!-- Produtos em Destaque -->
+    <section class="py-12 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 text-center">Produtos em Destaque</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
+                <!-- Cards de Produto em Destaque -->
+                <div class="bg-white rounded-lg shadow-md p-4">
+                <img src="https://images.pexels.com/photos/437037/pexels-photo-437037.jpeg" alt="Featured Product" class="w-full h-48 object-cover mb-4 rounded-md">
+                <h3 class="font-semibold">Smart Watch X1</h3>
+                <p class="text-sm text-gray-600">Fitness Tracker</p>
+                <div class="flex items-center mt-2">
+                    <span class="text-yellow-400">★★★★☆</span>
+                    <span class="ml-2 font-bold">$199.99</span>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-4">
+                <img src="https://images.pexels.com/photos/3825587/pexels-photo-3825587.jpeg" alt="Featured Product" class="w-full h-48 object-cover mb-4 rounded-md">
+                <h3 class="font-semibold">4K Action Camera</h3>
+                <p class="text-sm text-gray-600">Waterproof, 30FPS</p>
+                <div class="flex items-center mt-2">
+                    <span class="text-yellow-400">★★★★☆</span>
+                    <span class="ml-2 font-bold">$249.99</span>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-4">
+                <img src="https://images.pexels.com/photos/270408/pexels-photo-270408.jpeg" alt="Featured Product" class="w-full h-48 object-cover mb-4 rounded-md">
+                <h3 class="font-semibold">Bluetooth Speaker</h3>
+                <p class="text-sm text-gray-600">Deep Bass, 12hr Battery</p>
+                <div class="flex items-center mt-2">
+                    <span class="text-yellow-400">★★★★★</span>
+                    <span class="ml-2 font-bold">$79.99</span>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-4">
+                <img src="https://images.pexels.com/photos/6078123/pexels-photo-6078123.jpeg" alt="Featured Product" class="w-full h-48 object-cover mb-4 rounded-md">
+                <h3 class="font-semibold">Drone Pro</h3>
+                <p class="text-sm text-gray-600">4K Camera, GPS</p>
+                <div class="flex items-center mt-2">
+                    <span class="text-yellow-400">★★★★★</span>
+                    <span class="ml-2 font-bold">$499.99</span>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-4">
+                <img src="https://images.pexels.com/photos/6065422/pexels-photo-6065422.jpeg" alt="Featured Product" class="w-full h-48 object-cover mb-4 rounded-md">
+                <h3 class="font-semibold">Tablet Plus</h3>
+                <p class="text-sm text-gray-600">10.5" Display, 64GB</p>
+                <div class="flex items-center mt-2">
+                    <span class="text-yellow-400">★★★★☆</span>
+                    <span class="ml-2 font-bold">$299.99</span>
+                </div>
+            </div>
+
+                <!-- Similar aos produtos populares, mas com produtos diferentes -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Ofertas do Dia -->
+    <section class="py-12 bg-gray-900 text-white">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between mb-8">
+                <h2 class="text-3xl font-bold">Ofertas do Dia</h2>
+                <div id="countdown" class="text-xl font-mono"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <!-- Cards de Ofertas -->
+                <div class="bg-gray-800 rounded-lg p-4">
+                <img src="https://images.pexels.com/photos/2115257/pexels-photo-2115257.jpeg" alt="Deal" class="w-full h-48 object-cover mb-4 rounded-md">
+                <h3 class="font-semibold">Gaming Mouse</h3>
+                <p class="text-sm text-gray-400">RGB, 16000 DPI</p>
+                <div class="flex items-center mt-2">
+                    <span class="text-yellow-400">★★★★★</span>
+                    <span class="ml-2 font-bold">$49.99</span>
+                </div>
+            </div>
+            <div class="bg-gray-800 rounded-lg p-4">
+                <img src="https://images.pexels.com/photos/3945637/pexels-photo-3945637.jpeg" alt="Deal" class="w-full h-48 object-cover mb-4 rounded-md">
+                <h3 class="font-semibold">Noise Cancelling Headphones</h3>
+                <p class="text-sm text-gray-400">Bluetooth 5.0, 40h Battery Life</p>
+                <div class="flex items-center mt-2">
+                    <span class="text-yellow-400">★★★★★</span>
+                    <span class="ml-2 font-bold">$89.99</span>
+                </div>
+            </div>
+            <div class="bg-gray-800 rounded-lg p-4">
+                <img src="https://images.pexels.com/photos/3785938/pexels-photo-3785938.jpeg" alt="Deal" class="w-full h-48 object-cover mb-4 rounded-md">
+                <h3 class="font-semibold">Portable Speaker</h3>
+                <p class="text-sm text-gray-400">Waterproof, 12hr Battery</p>
+                <div class="flex items-center mt-2">
+                    <span class="text-yellow-400">★★★★☆</span>
+                    <span class="ml-2 font-bold">$39.99</span>
+                </div>
+            </div>
+            <div class="bg-gray-800 rounded-lg p-4">
+                <img src="https://images.pexels.com/photos/3184287/pexels-photo-3184287.jpeg" alt="Deal" class="w-full h-48 object-cover mb-4 rounded-md">
+                <h3 class="font-semibold">Fitness Tracker</h3>
+                <p class="text-sm text-gray-400">Heart Rate Monitor, Sleep Tracking</p>
+                <div class="flex items-center mt-2">
+                    <span class="text-yellow-400">★★★★☆</span>
+                    <span class="ml-2 font-bold">$29.99</span>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categorias -->
+    <section class="py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Categorias de Gaming -->
+                <div class="relative h-64 rounded-lg overflow-hidden">
+	                <img src="https://images.pexels.com/photos/3165335/pexels-photo-3165335.jpeg" alt="Console Gaming" class="w-full h-full object-cover">
+	                <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+	                    <h3 class="text-white text-2xl font-bold">Console Gaming</h3>
+	                </div>
+	            </div>
+	                <!-- Gaming Category 2 -->
+	            <div class="relative h-64 rounded-lg overflow-hidden">
+	                <img src="https://images.pexels.com/photos/3945659/pexels-photo-3945659.jpeg" alt="Console Gaming" class="w-full h-full object-cover">
+	                <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+	                    <h3 class="text-white text-2xl font-bold">Console Gaming</h3>
+	                </div>
+	            </div>
+	            <!-- Gaming Category 3 -->
+	            <div class="relative h-64 rounded-lg overflow-hidden">
+	                <img src="https://images.pexels.com/photos/3165337/pexels-photo-3165337.jpeg" alt="VR Gaming" class="w-full h-full object-cover">
+	                <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+	                    <h3 class="text-white text-2xl font-bold">VR Gaming</h3>
+	                </div>
+	            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-lg font-bold mb-4">TechStore</h3>
+                    <p class="text-sm text-gray-400">Sua loja completa para tecnologia. Obtenha os últimos gadgets e equipamentos com preços imbatíveis.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Empresa</h3>
+                    <ul class="text-gray-400">
+                        <li><a href="#" class="hover:text-white">Sobre Nós</a></li>
+                        <li><a href="#" class="hover:text-white">Carreiras</a></li>
+                        <li><a href="#" class="hover:text-white">Contato</a></li>
+                    </ul>
+                </div>
+                <!-- Mais seções do rodapé... -->
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Support</h3>
+                    <ul class="text-gray-400">
+                        <li><a href="#" class="hover:text-white">FAQs</a></li>
+                        <li><a href="#" class="hover:text-white">Shipping & Returns</a></li>
+                        <li><a href="#" class="hover:text-white">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão WhatsApp -->
+    <a href="https://wa.me/1234567890" target="_blank" class="whatsapp-button">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+        <!-- JivoChat Script -->
+    <script src="//code.jivosite.com/widget/YOUR_WIDGET_ID" async></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
