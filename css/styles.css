@@ -12,7 +12,7 @@ body {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 40 25px;
+    padding: 40px 25px;
 }
 
 /* Responsive grid */
@@ -33,6 +33,30 @@ body {
     }
 }
 
+/* Hamburger menu styles */
+.hamburger-menu {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #333;
+    cursor: pointer;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hamburger-menu:focus {
+    outline: none;
+}
+
+/* Hide hamburger menu on desktop */
+@media (min-width: 768px) {
+    .hamburger-menu {
+        display: none;
+    }
+}
+
 /* Mobile menu styles */
 #mobile-menu {
     display: none;
@@ -42,9 +66,20 @@ body {
     display: block;
 }
 
+/* Hide mobile menu on desktop */
+@media (min-width: 768px) {
+    #mobile-menu {
+        display: none !important;
+    }
+}
+
 /* Rest of the CSS remains the same */
 
 /* Media queries for responsiveness */
+@media (max-width: 1023px) {
+    /* ... */
+}
+
 @media (max-width: 768px) {
     .carousel {
         height: 300px;
@@ -162,22 +197,3 @@ body {
     transform: scale(1.1);
     background-color: #128C7E;
 }
-
-.hamburger-menu {
-    background: none;
-    border: none;
-    font-size: 2rem; /* Increased font size */
-    color: #333;
-    cursor: pointer;
-    padding: 0.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.hamburger-menu:focus {
-    outline: none;
-}
-
-
-
