@@ -12,25 +12,34 @@
     
     <!-- Cabeçalho com links de navegação atualizados -->
     <header class="bg-white shadow">
-        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-            <h1 id="techstore" class="text-2xl font-bold">TechStore</h1>
-            <nav class="hidden md:block">
-                <a href="#home" class="text-gray-700 mx-2">Home</a>
-                <a href="#popular-products" class="text-gray-700 mx-2">Products</a>
-                <a href="#featured-products" class="text-gray-700 mx-2">Featured</a>
-                <a href="#deals" class="text-gray-700 mx-2">Deals</a>
-                <a href="#categories" class="text-gray-700 mx-2">Categories</a>
-            </nav>
-                <button id="menu-toggle" class="md:hidden hamburger-menu">☰</button>
-        </div>
+        <!-- Replace the existing navigation with this new structure -->
+<nav class="navigation">
+  <div class="nav-container container mx-auto px-4 py-4 flex justify-between items-center">
+    <h1 id="techstore" class="text-2xl font-bold">TechStore</h1>
+    
+    <div class="menu-toggle">
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+</nav>
 
-        <div id="mobile-menu" class="hidden md:hidden">
-            <a href="#home" class="block text-gray-700 py-2 px-4">Home</a>
-            <a href="#popular-products" class="block text-gray-700 py-2 px-4">Products</a>
-            <a href="#featured-products" class="block text-gray-700 py-2 px-4">Featured</a>
-            <a href="#deals" class="block text-gray-700 py-2 px-4">Deals</a>
-            <a href="#categories" class="block text-gray-700 py-2 px-4">Categories</a>
-        </div>
+<div class="fullscreen-menu">
+  <div class="menu-background"></div>
+  <div class="menu-content">
+    <div class="menu-links">
+      <a href="#home" class="menu-link">Home</a>
+      <a href="#popular-products" class="menu-link">Products</a>
+      <a href="#featured-products" class="menu-link">Featured</a>
+      <a href="#deals" class="menu-link">Deals</a>
+      <a href="#categories" class="menu-link">Categories</a>
+    </div>
+    
+  </div>
+</div>
     </header>
 
     <!-- Carrossel -->
@@ -230,25 +239,25 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <!-- Categorias de Gaming -->
                 <div class="relative h-64 rounded-lg overflow-hidden">
-	                <img src="https://images.pexels.com/photos/3165335/pexels-photo-3165335.jpeg" alt="Console Gaming" class="w-full h-full object-cover">
-	                <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
-	                    <h3 class="text-white text-2xl font-bold">Console Gaming</h3>
-	                </div>
-	            </div>
-	                <!-- Gaming Category 2 -->
-	            <div class="relative h-64 rounded-lg overflow-hidden">
-	                <img src="https://images.pexels.com/photos/3945659/pexels-photo-3945659.jpeg" alt="Console Gaming" class="w-full h-full object-cover">
-	                <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
-	                    <h3 class="text-white text-2xl font-bold">Console Gaming</h3>
-	                </div>
-	            </div>
-	            <!-- Gaming Category 3 -->
-	            <div class="relative h-64 rounded-lg overflow-hidden">
-	                <img src="https://images.pexels.com/photos/3165337/pexels-photo-3165337.jpeg" alt="VR Gaming" class="w-full h-full object-cover">
-	                <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
-	                    <h3 class="text-white text-2xl font-bold">VR Gaming</h3>
-	                </div>
-	            </div>
+                    <img src="https://images.pexels.com/photos/3165335/pexels-photo-3165335.jpeg" alt="Console Gaming" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+                        <h3 class="text-white text-2xl font-bold">Console Gaming</h3>
+                    </div>
+                </div>
+                    <!-- Gaming Category 2 -->
+                <div class="relative h-64 rounded-lg overflow-hidden">
+                    <img src="https://images.pexels.com/photos/3945659/pexels-photo-3945659.jpeg" alt="Console Gaming" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+                        <h3 class="text-white text-2xl font-bold">Console Gaming</h3>
+                    </div>
+                </div>
+                <!-- Gaming Category 3 -->
+                <div class="relative h-64 rounded-lg overflow-hidden">
+                    <img src="https://images.pexels.com/photos/3165337/pexels-photo-3165337.jpeg" alt="VR Gaming" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+                        <h3 class="text-white text-2xl font-bold">VR Gaming</h3>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

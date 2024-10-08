@@ -11,6 +11,58 @@ document.querySelectorAll('nav a').forEach(anchor => {
     });
 });
 
+// Fullscreen Menu Functionality
+document.addEventListener('DOMContentLoaded', function() {
+  const menuToggle = document.querySelector('.menu-toggle');
+  const fullscreenMenu = document.querySelector('.fullscreen-menu');
+  const menuLinks = document.querySelectorAll('.menu-link');
+  
+  // Toggle menu
+  menuToggle.addEventListener('click', function() {
+    menuToggle.classList.toggle('active');
+    fullscreenMenu.classList.toggle('active');
+    
+    // Toggle body scroll
+    if (fullscreenMenu.classList.contains('active')) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+  });
+  
+  // Close menu when clicking menu links
+  menuLinks.forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      
+      // Get target section
+      const targetId = this.getAttribute('href');
+      const targetSection = document.querySelector(targetId);
+      
+      // Close menu
+      menuToggle.classList.remove('active');
+      fullscreenMenu.classList.remove('active');
+      document.body.style.overflow = '';
+      
+      // Smooth scroll to target section
+      setTimeout(() => {
+        targetSection.scrollIntoView({
+          behavior: 'smooth'
+        });
+      }, 300);
+    });
+  });
+  
+  // Close menu on escape key
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && fullscreenMenu.classList.contains('active')) {
+      menuToggle.classList.remove('active');
+      fullscreenMenu.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+  });
+});
+
 // Mobile menu functionality
 document.addEventListener('DOMContentLoaded', function() {
     const menuToggle = document.getElementById('menu-toggle');
